@@ -18,7 +18,7 @@ show_posts: false
   </div>
 
   <div class="lab-home-intro-logo scroll-fade-up">
-    <img src="/assets/images/about-logo.jpg" alt="SIGMA Lab logo" data-no-photo-swipe>
+    <img src="{{ "/assets/images/about-logo.jpg" | relative_url }}" alt="SIGMA Lab logo" data-no-photo-swipe>
   </div>
 </section>
 
@@ -27,7 +27,7 @@ show_posts: false
   <ul class="lab-focus-list">
     {% for item in site.data.home.research_focus.items %}
       <li class="lab-focus-item scroll-fade-up" style="--reveal-delay: {{ forloop.index0 | times: 80 }}ms;">
-        <img src="{{ item.image }}" alt="{{ item.alt }}" data-no-photo-swipe>
+        <img src="{{ item.image | relative_url }}" alt="{{ item.alt }}" data-no-photo-swipe>
         <div class="lab-focus-content">
           <h3>{{ item.title }}</h3>
           <p>{{ item.description }}</p>

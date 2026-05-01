@@ -6,7 +6,7 @@
     <div class="people-grid">
       {% for member in group.members %}
         <article class="person-card scroll-fade-up" style="--reveal-delay: {{ forloop.index0 | times: 80 }}ms;">
-          <img src="{{ member.image }}" alt="{{ member.name }}">
+          <img src="{{ member.image | relative_url }}" alt="{{ member.name }}">
           <p class="person-name">{{ member.name }}</p>
           <p>{{ member.role }}</p>
           <p>
