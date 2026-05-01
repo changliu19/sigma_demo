@@ -47,8 +47,8 @@ description: >-
   intelligence, multimodal large models, intelligent agents, 3D spatial
   intelligence, and scene generation.
 
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. https://example.com
+baseurl: "/sigma_demo" # the subpath of your site, e.g. /blog
+url: "https://changliu19.github.io" # the base hostname & protocol for your site, e.g. https://example.com
 favicon: "/assets/images/logo.png" # the favicon for your site
 
 # Yat date format
