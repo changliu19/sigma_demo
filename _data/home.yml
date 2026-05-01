@@ -1,0 +1,74 @@
+title: About
+heading: SIGMA
+subheading: SUFE artIficial General intelligence & Multimodal AI Lab
+banner: /assets/images/banners/home.jpeg
+
+intro:
+  lead: >
+    About Us
+  paragraphs:
+    - >
+      SIGMA (SUFE artIficial General intelligence & Multimodal AI Lab),
+      affiliated with Shanghai University of Finance and Economics, is dedicated
+      to advancing international frontier research in artificial intelligence and
+      computer vision. The lab focuses on key areas including embodied
+      intelligence, multimodal large models, intelligent agents, 3D spatial
+      intelligence, and scene generation.
+    - >
+      Guided by fundamental scientific challenges and driven by the pursuit of
+      high-impact research outcomes, SIGMA has made a series of influential
+      contributions in computer vision and machine learning in recent years.
+    - >
+      SIGMA（SUFE artIficial General intelligence & Multimodal AI
+      Lab）上海财经大学通用智能与多模态实验室依托上海财经大学，面向人工智能与计算机视觉国际前沿开展系统研究，重点聚焦具身智能、多模态大模型、智能体、三维空间智能与场景生成等方向。实验室坚持以前沿科学问题为牵引，以高水平成果产出为导向，近年来在计算机视觉与机器学习领域持续取得一系列具有影响力的研究进展。
+
+research_focus:
+  title: Research Focus
+  items:
+    - title: Embodied intelligence
+      image: /assets/images/research-focus/embodied-intelligence.png
+      alt: Embodied intelligence research illustration
+      description: >
+        我们研究智能系统如何在物理世界中感知、推理与行动，重点连接视觉感知、
+        任务规划、运动控制和持续学习。该方向面向真实环境中的机器人与具身智能体，
+        使其能够理解场景、操作物体，并适应开放复杂的任务需求。
+    - title: Multimodal large models
+      image: /assets/images/research-focus/multimodal-large-models.png
+      alt: Multimodal large models research illustration
+      description: >
+        我们构建能够联合理解图像、语言、音频、视频和结构化信息的多模态大模型。
+        该方向关注跨模态对齐、统一表征学习与复杂场景推理，目标是形成可交互、
+        可泛化、可可靠部署的通用多模态智能能力。
+    - title: Intelligent agents
+      image: /assets/images/research-focus/intelligent-agents.png
+      alt: Intelligent agents research illustration
+      description: >
+        我们探索能够自主规划、调用工具、记忆上下文、协同工作并从反馈中改进的智能体系统。
+        该方向致力于将基础模型转化为可执行任务的实际系统，使其在多步骤问题求解中具备
+        更强的鲁棒性、可解释性和责任边界。
+    - title: 3D spatial intelligence
+      image: /assets/images/research-focus/3d-spatial-intelligence.png
+      alt: 3D spatial intelligence research illustration
+      description: >
+        我们研究机器如何重建、理解并推理三维空间，涵盖几何感知、场景表征、
+        空间定位与三维推理等关键问题。该方向服务于机器人、具身智能和下一代视觉智能，
+        帮助模型建立对真实世界空间结构的深层理解。
+    - title: Scene generation
+      image: /assets/images/research-focus/scene-generation.png
+      alt: Scene generation research illustration
+      description: >
+        我们发展可控、真实且具有语义一致性的场景生成方法，覆盖图像、视频、
+        三维环境和交互式世界的生成。该方向可支撑内容设计、仿真环境构建、
+        数据生成与具身智能训练，为智能系统提供丰富而可控的场景基础。
+
+panels:
+  - title: Quick Links
+    items:
+      - label: SUFE
+        url: https://www.sufe.edu.cn/
+      - label: SUFE SCAI
+        url: https://scai.sufe.edu.cn/
+      - label: People
+        url: /people/
+      - label: Publications
+        url: /publications/

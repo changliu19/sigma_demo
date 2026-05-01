@@ -1,0 +1,14 @@
+{% assign items = include.items | default: site.data.news.items %}
+{% assign limit = include.limit | plus: 0 %}
+
+<div class="lab-news-list{% if include.page %} lab-news-page{% endif %}">
+  {% for item in items %}
+    {% if limit > 0 and forloop.index > limit %}
+      {% break %}
+    {% endif %}
+    <div class="lab-news-item scroll-fade-up" style="--reveal-delay: {{ forloop.index0 | times: 80 }}ms;">
+      <span class="lab-news-date">{{ item.date }}</span>
+      <p>{{ item.content }}</p>
+    </div>
+  {% endfor %}
+</div>

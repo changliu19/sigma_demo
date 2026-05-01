@@ -1,0 +1,8 @@
+*.gem
+.DS_Store
+.bundle
+.bundle-docker
+.bundle-ruby
+.sass-cache
+.jekyll-cache
+_site

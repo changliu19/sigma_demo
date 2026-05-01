@@ -1,0 +1,360 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+// Default theme colors
+$theme-colors: (
+  "coolblack": #090a0b,
+  "spacegrey": #353535,
+  "snowwhite": #ffffff,
+);
+
+// Default brand colors
+$brand-colors: (
+  "orangered": #ff5100,
+  "greatgold": #f2cb05,
+  "greenblue": #389092,
+);
+
+$theme-name: "{{ site.theme_color }}";
+$brand-name: "{{ site.brand_color }}";
+$theme-color: map-get($theme-colors, "snowwhite");
+$brand-color: map-get($brand-colors, "orangered");
+
+@if map-has-key($theme-colors, $theme-name) {
+  $theme-color: map-get($theme-colors, $theme-name);
+} @else if str-index($theme-name, "#") == 1 {
+  $theme-color: {{ site.theme_color | default: '#ffffff' }};
+}
+
+@if map-has-key($brand-colors, $brand-name) {
+  $brand-color: map-get($brand-colors, $brand-name);
+} @else if str-index($brand-name, "#") == 1 {
+  $brand-color: {{ site.brand_color | default: '#ff5100' }};
+}
+
+$content-width: {{ site.content_width | default: '920px' }};
+
+// Click to top theme
+$click-to-top-light-background-color: {{ site.click_to_top.light.background_color | default: "white" }};
+$click-to-top-light-color: {{ site.click_to_top.light.color | default: "#454545" }};
+$click-to-top-dark-background-color: {{ site.click_to_top.dark.background_color | default: "#34323d" }};
+$click-to-top-dark-color: {{ site.click_to_top.dark.color | default: "#bbb" }};
+
+// Selection styles
+$selection-color: unquote("{{ site.selection.color }}");
+$selection-background-color: unquote("{{ site.selection.background_color }}");
+
+@if $selection-color == "" {
+  $selection-color: inherit;
+}
+@if $selection-background-color == "" {
+  $selection-background-color: rgba(invert($brand-color), 0.3);
+}
+
+@import "yat";
+
+.scroll-reveal-enabled {
+  .scroll-fade-up {
+    opacity: 0;
+    transform: translateY(28px);
+    transition:
+      opacity 0.7s ease,
+      transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+    transition-delay: var(--reveal-delay, 0ms);
+    will-change: opacity, transform;
+  }
+
+  .scroll-fade-up.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-reveal-enabled {
+    .scroll-fade-up {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+  }
+}
+
+.lab-home-intro {
+  display: grid;
+  align-items: center;
+  gap: 3rem;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 320px);
+  margin-bottom: 4rem;
+}
+
+.lab-home-intro-copy {
+  h2 {
+    margin-bottom: 1.25rem;
+  }
+
+  p {
+    margin-bottom: 1.15rem;
+  }
+}
+
+.lab-home-intro-logo {
+  justify-self: center;
+
+  img {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+  }
+}
+
+.lab-home-panels {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 3.5rem 0 4rem;
+}
+
+.lab-research-focus {
+  margin: 3rem 0 4rem;
+
+  h2 {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.lab-focus-list {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.lab-focus-item {
+  display: grid;
+  grid-template-columns: minmax(260px, 38%) minmax(0, 1fr);
+  align-items: stretch;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid rgba(56, 144, 146, 0.12);
+  border-radius: 18px;
+  box-shadow: 0 18px 40px rgba(18, 55, 64, 0.08);
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+  }
+}
+
+.lab-focus-content {
+  padding: 1.8rem 2rem;
+
+  h3 {
+    margin: 0 0 0.85rem;
+    color: #16343d;
+    font-size: 1.12rem;
+  }
+
+  p {
+    margin: 0;
+    color: #44555c;
+    line-height: 1.7;
+  }
+}
+
+.lab-panel,
+.lab-news-item,
+.person-card {
+  background: #fff;
+  border: 1px solid rgba(56, 144, 146, 0.12);
+  border-radius: 18px;
+  box-shadow: 0 18px 40px rgba(18, 55, 64, 0.08);
+}
+
+.lab-panel {
+  padding: 1.9rem 2rem;
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 1.35rem;
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 1.2rem;
+  }
+}
+
+.lab-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.lab-news-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.lab-news-item {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 110px 1fr;
+  padding: 1rem 1.25rem;
+
+  p {
+    margin: 0;
+  }
+}
+
+.lab-news-date {
+  color: #389092;
+  font-weight: 700;
+}
+
+.people-group {
+  margin-bottom: 2.5rem;
+}
+
+.people-grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.person-card {
+  padding: 1.25rem;
+
+  img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 4.6;
+    object-fit: cover;
+    border-radius: 14px;
+    margin-bottom: 1rem;
+  }
+
+  .person-name {
+    margin: 0 0 0.4rem;
+    font-size: 1.17em;
+    font-weight: 700;
+  }
+
+  p {
+    margin: 0.35rem 0;
+  }
+}
+
+.publication-note {
+  color: #5c6e75;
+  margin-bottom: 1.5rem;
+}
+
+.publications {
+  h2.bibliography {
+    margin: 2rem 0 1rem;
+    color: #16343d;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  ol.bibliography {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+  }
+}
+
+.publication-year {
+  margin-bottom: 2rem;
+}
+
+.publication-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.publication-item {
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(56, 144, 146, 0.12);
+}
+
+.publication-title {
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+
+.publication-authors {
+  color: #44555c;
+  margin-bottom: 0.2rem;
+}
+
+.publication-venue {
+  color: #389092;
+  font-style: italic;
+}
+
+.publication-entry {
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(56, 144, 146, 0.12);
+}
+
+.publication-entry:last-child {
+  border-bottom: 0;
+}
+
+.publication-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.6rem;
+}
+
+.publication-links a {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.18rem 0.55rem;
+  border: 1px solid rgba(56, 144, 146, 0.2);
+  border-radius: 999px;
+  color: #2a7d80;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.publication-links a:hover {
+  background: rgba(56, 144, 146, 0.08);
+}
+
+@media screen and (max-width: 900px) {
+  .lab-home-intro,
+  .lab-home-panels,
+  .lab-focus-list,
+  .lab-focus-item,
+  .people-grid,
+  .lab-news-item {
+    grid-template-columns: 1fr;
+  }
+
+  .lab-home-intro-logo {
+    grid-row: 1;
+    justify-self: center;
+
+    img {
+      max-width: min(320px, 82vw);
+    }
+  }
+}

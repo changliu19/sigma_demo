@@ -1,0 +1,59 @@
+groups:
+
+  - title: Faculty
+    members:
+
+      - name: Shuting He
+        image: /assets/images/people/Shuting%20He.jpg
+        role: "Lab Director<br>Assistant Professor"
+        homepage: https://heshuting555.github.io/
+        email: shuting.he@sufe.edu.cn
+
+      - name: Chang Liu
+        image: /assets/images/people/Liu%20Chang.jpg
+        role: "Lab Director<br>Assistant Professor"
+        homepage: https://scai.sufe.edu.cn/lc11/main.htm
+        email: chang.liu@sufe.edu.cn
+
+  - title: Visiting Faculty
+    members:
+
+      - name: Henghui Ding
+        image: /assets/images/people/Henghui%20Ding.jpg
+        role: "Professor<br>Fudan University"
+        homepage: https://henghuiding.com/
+        email: henghui.ding@gmail.com
+
+  - title: Ph.D. Students
+    members:
+
+      - name: Yitong Yang
+        image: /assets/images/people/YItong%20Yang.jpg
+        role: Ph.D. Student
+        email: yangyitong@stu.sufe.edu.cn
+        github: https://github.com/yangyt46
+
+      - name: Hao Dou
+        image: /assets/images/people/Hao%20Dou.jpg
+        role: Ph.D. Student
+        email: douh645@gmail.com
+
+  - title: Master Students
+    members:
+
+      - name: Zhihao Zhang
+        image: /assets/images/people/Zhihao%20Zhang.jpg
+        role: Master Student
+        email: 2024213167@stu.sufe.edu.cn
+
+      - name: Xuexin Liu
+        image: /assets/images/people/Xuexin%20Liu.jpg
+        role: Master Student
+        email: stang24@m.fudan.edu.cn
+        github: https://github.com/luxe7
+
+      - name: Tianqi Chen
+        image: /assets/images/people/Tianqi%20Chen.jpg
+        role: Master Student
+        email: tianqichen@stu.sufe.edu.cn
+        github: https://github.com/chanqilin

@@ -1,0 +1,18 @@
+{% assign years = include.years | default: site.data.publications.years %}
+
+<div class="publications-list">
+  {% for year_group in years %}
+    <section class="publication-year">
+      <h2 id="{{ year_group.year }}">{{ year_group.year }}</h2>
+      <ul class="publication-items">
+        {% for item in year_group.items %}
+          <li class="publication-item">
+            <div class="publication-title">{{ item.title }}</div>
+            <div class="publication-authors">{{ item.authors }}</div>
+            <div class="publication-venue">{{ item.venue }}</div>
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
+  {% endfor %}
+</div>

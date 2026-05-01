@@ -1,0 +1,30 @@
+{% assign groups = include.groups | default: site.data.people.groups %}
+{% for group in groups %}
+  <section class="people-group">
+    {% assign group_id = group.title | slugify %}
+    <h2 id="{{ group_id }}" class="scroll-fade-up">{{ group.title }}</h2>
+    <div class="people-grid">
+      {% for member in group.members %}
+        <article class="person-card scroll-fade-up" style="--reveal-delay: {{ forloop.index0 | times: 80 }}ms;">
+          <img src="{{ member.image }}" alt="{{ member.name }}">
+          <p class="person-name">{{ member.name }}</p>
+          <p>{{ member.role }}</p>
+          <p>
+            {% if member.homepage %}
+              <a href="{{ member.homepage }}">Homepage</a>
+            {% endif %}
+            {% if member.homepage and member.email %}
+              ·
+            {% endif %}
+            {% if member.email %}
+              <a href="mailto:{{ member.email }}">Email</a>
+            {% endif %}
+            {% if member.github %}
+              · <a href="{{ member.github }}">GitHub</a>
+            {% endif %}
+          </p>
+        </article>
+      {% endfor %}
+    </div>
+  </section>
+{% endfor %}

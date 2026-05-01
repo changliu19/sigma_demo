@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<div class="framework">
+  <section class="main">
+
+     {{ content }}
+
+  </section>
+
+  {%- assign sidebar_items = page.sidebar | default: layout.sidebar -%}
+  {%- if sidebar_items and sidebar_items != empty -%}
+  <aside class="sidebar">
+    {%- if sidebar_items.first -%}
+      {%- for sidebar in sidebar_items -%}
+        {%- assign sidebar_include = 'sidebar/' | append: sidebar | append: '.html' -%}
+        {%- include {{ sidebar_include }} -%}
+      {%- endfor -%}
+    {%- else -%}
+      {%- assign sidebar_include = 'sidebar/' | append: sidebar_items | append: '.html' -%}
+      {%- include {{ sidebar_include }} -%}
+    {%- endif -%}
+  </aside>
+  {%- endif -%}
+</div>
