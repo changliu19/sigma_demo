@@ -32,6 +32,8 @@ jobs:
           bundle install
 
       - uses: actions/configure-pages@v5
+        with:
+          enablement: true
 
       - name: Build with Jekyll
         run: bundle exec jekyll build
