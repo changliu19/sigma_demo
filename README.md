@@ -1,202 +1,76 @@
-<div align="center">
-  <br>
+# SIGMA Lab Website
 
-  <a href="https://github.com/jeffreytse/jekyll-theme-yat">
-    <img alt="jekyll-theme-yat →~ jekyll" src="https://user-images.githubusercontent.com/9413601/106478481-346fdf00-64e4-11eb-9385-1ab5329c3234.png" width="600">
-  </a>
+**SIGMA** (SUFE artIficial General intelligence & Multimodal AI Lab) — 上海财经大学通用智能与多模态实验室
 
-  <h1>JEKYLL YAT THEME</h1>
+🌐 Live site: [https://changliu19.github.io/sigma_demo](https://changliu19.github.io/sigma_demo)
 
-</div>
+---
 
-<h4 align="center">
-  <a href="https://jekyllrb.com/" target="_blank"><code>Jekyll</code></a> theme for elegant writers.
-</h4>
+## About
 
-<p align="center">
-  <a href="https://jeffreytse.github.io/jekyll-theme-yat">
-    <img src="https://github.com/jeffreytse/jekyll-theme-yat/workflows/Github%20Pages/badge.svg"
-      alt="Github Pages" />
-  </a>
+SIGMA is affiliated with [Shanghai University of Finance and Economics (SUFE)](https://www.sufe.edu.cn/) and is dedicated to advancing international frontier research in artificial intelligence and computer vision. The lab focuses on:
 
-  <a href="https://badge.fury.io/rb/jekyll-theme-yat">
-    <img src="https://badge.fury.io/rb/jekyll-theme-yat.svg"
-      alt="Gem Version" />
-  </a>
+- **Embodied Intelligence** — perception, reasoning, and action in physical environments
+- **Multimodal Large Models** — joint understanding across image, language, audio, video, and structured data
+- **Intelligent Agents** — autonomous planning, tool use, memory, and multi-agent collaboration
+- **3D Spatial Intelligence** — 3D reconstruction, scene representation, and spatial reasoning
+- **Scene Generation** — controllable, realistic, and semantically consistent generation of images, video, and 3D environments
 
-  <a href="https://opensource.org/licenses/MIT">
-    <img src="https://img.shields.io/badge/License-MIT-brightgreen.svg"
-      alt="License: MIT" />
-  </a>
+## Faculty
 
-  <a href="https://liberapay.com/jeffreytse">
-    <img src="https://img.shields.io/liberapay/goal/jeffreytse.svg?logo=liberapay"
-      alt="Donate (Liberapay)" />
-  </a>
+| Name | Role | Affiliation |
+|------|------|-------------|
+| [Shuting He](https://heshuting555.github.io/) | Lab Director, Assistant Professor | SUFE |
+| [Chang Liu](https://scai.sufe.edu.cn/lc11/main.htm) | Lab Director, Assistant Professor | SUFE |
+| [Henghui Ding](https://henghuiding.com/) | Visiting Professor | Fudan University |
 
-  <a href="https://patreon.com/jeffreytse">
-    <img src="https://img.shields.io/badge/support-patreon-F96854.svg?style=flat-square"
-      alt="Donate (Patreon)" />
-  </a>
+## Local Development
 
-  <a href="https://ko-fi.com/jeffreytse">
-  <img height="20" src="https://www.ko-fi.com/img/githubbutton_sm.svg"
-  alt="Donate (Ko-fi)" />
-  </a>
-</p>
-
-<div align="center">
-  <sub>Built with ❤︎ by
-  <a href="https://jeffreytse.net">jeffreytse</a> and
-  <a href="https://github.com/jeffreytse/jekyll-theme-yat/graphs/contributors">contributors </a>
-  </sub>
-</div>
-
-<br>
-
-Hey, nice to meet you, you found this [Jekyll][jekyll] theme. Here the
-_YAT (Yet Another Theme)_ is a modern responsive theme. It's quite
-clear, clean and neat for writers and posts. **If you are an elegant
-writer and focus on content, don't miss it.**
-
-<p align="center">
-Like this elegant theme? You can give it a star or sponsor me!<br>
-I will respect your crucial support and say THANK YOU!
-</p>
-
-<p align="center">
-
-  <img src="https://user-images.githubusercontent.com/9413601/91842897-6a840b00-ec87-11ea-95ca-52abcc1ac063.png" alt="demo-screenshot" width="100%"/>
-
-</p>
-
-<h4 align="center">BANNER</h4>
-
-<p align="center">
-
-  <img src="https://user-images.githubusercontent.com/9413601/123897812-ae729a00-d996-11eb-96b8-b76ba926f555.gif" alt="demo-screenshot" width="100%"/>
-
-</p>
-
-## Features
-
-- Support beautiful **Night Mode**.
-- Modern responsive web design.
-- Full layouts `home`, `post`, `tags`, `archive` and `about`.
-- Uses font awesome 5 for icons.
-- Beautiful page banner with image and video.
-- Beautiful Syntax Highlight using [highlight.js][highlight-js].
-- Beautiful image gallery previewer using [PhotoSwipe 5][photoswipe-5].
-- RSS support using [Jekyll Feed][jekyll-feed] gem.
-- Optimized for search engines using [Jekyll Seo Tag][jekyll-seo-tag] gem.
-- Sitemap support using [Jekyll Sitemap][jekyll-sitemap] gem.
-- Complex and flexible table support using [Jekyll Spaceship][jekyll-spaceship] gem.
-- MathJAX and LaTeX optional support using [Jekyll Spaceship][jekyll-spaceship] gem.
-- Media (Youtube, Spotify, etc.) support using [Jekyll Spaceship][jekyll-spaceship] gem.
-- Diagram (PlantUML, Mermaid) support using [Jekyll Spaceship][jekyll-spaceship] gem.
-- Google Translation support.
-- New post tag support.
-- Pin post tag support.
-
-Also, visit the [Live Demo][yat-live-demo] site for the theme.
-
-## Installation
-
-There are three ways to install:
-
-- As a [gem-based theme](https://jekyllrb.com/docs/themes/#understanding-gem-based-themes).
-- As a [remote theme](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/) (GitHub Pages compatible).
-- Forking/directly copying all of the theme files into your project.
-
-### Gem-based Theme Method
-
-Add this line to your Jekyll site's `Gemfile`:
-
-```ruby
-gem "jekyll-theme-yat"
-```
-
-And add this line to your Jekyll site's `_config.yml`:
-
-```yaml
-theme: jekyll-theme-yat
-```
-
-And then execute:
+**Prerequisites:** Ruby, Bundler, Jekyll
 
 ```bash
-$ bundle
+# Install dependencies
+bundle install
+
+# Serve locally
+bundle exec jekyll serve
 ```
 
-Or install it yourself as:
+Open [http://localhost:4000/sigma_demo](http://localhost:4000/sigma_demo) in your browser.
+
+### Using Docker
 
 ```bash
-$ gem install jekyll-theme-yat
+bash docker-start.sh
 ```
 
-### Remote Theme Method with Jekyll Remote Theme Plugin
+## Project Structure
 
-Remote themes are similar to Gem-based themes, but do not require `Gemfile` changes or whitelisting making them ideal for sites hosted with GitHub Pages.
+| Path | Description |
+|------|-------------|
+| `_config.yml` | Site configuration |
+| `_data/` | Structured data: people, publications, news, venues |
+| `_layouts/` | Page layout templates |
+| `_includes/` | Reusable HTML components |
+| `_sass/` | Stylesheet source files |
+| `assets/` | Images, CSS, JavaScript |
+| `_bibliography/papers.bib` | BibTeX publication entries |
 
-To install:
+## Updating Content
 
-Add this line to your Jekyll site's `Gemfile`:
+- **People:** edit `_data/people.yml`
+- **Publications:** edit `_bibliography/papers.bib` and `_data/publications.yml`
+- **News:** edit `_data/news.yml`
+- **Home page intro / research focus:** edit `_data/home.yml`
+- **Banners & photos:** add images to `assets/images/`
 
-```ruby
-gem "jekyll-remote-theme", group: :jekyll_plugins
-```
+## Deployment
 
-And add this line to your Jekyll site's `_config.yml`:
-
-```yaml
-# theme: owner/name --> Don't forget to remove/comment the gem-based theme option
-remote_theme: "jeffreytse/jekyll-theme-yat"
-
-# Add the following to activate the plugin
-plugins:
-  - jekyll-remote-theme
-```
-
-And then execute:
-
-```bash
-$ bundle
-```
-
-### Forking/Cloning the project
-
-You need to update the option of github workflow file `.github/workflows/build-jekyll.yml`, especially to ensure the value of `jekyll_baseurl` is correct.
-
-### GitHub Pages without limitation
-
-GitHub Pages runs in `safe` mode and only allows [a set of whitelisted plugins/themes](https://pages.github.com/versions/). **In other words, the third-party gems will not work normally**.
-
-To use the third-party gem in GitHub Pages without limitation:
-
-Here is a GitHub Action named [jekyll-deploy-action](https://github.com/jeffreytse/jekyll-deploy-action) for Jekyll site deployment conveniently. 👍
-
-## Usage
-
-Add or update your available layouts, includes, sass and/or assets.
-
-## Development
-
-To set up your environment to develop this theme, run `bundle install`.
-
-Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
-
-When your theme is released, only the files in `_data`, `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
-To add a custom directory to your theme-gem, please edit the regexp in `jekyll-theme-yat.gemspec` accordingly.
-
-## Contributing
-
-Issues and Pull Requests are greatly appreciated. If you've never contributed to an open source project before I'm more than happy to walk you through how to create a pull request.
-
-You can start by [opening an issue](https://github.com/jeffreytse/jekyll-theme-yat/issues/new) describing the problem that you're looking to resolve and we'll go from there.
+The site is deployed to GitHub Pages via GitHub Actions. Pushing to the `main` branch triggers an automatic build and deploy.
 
 ## License
 
-This theme is licensed under the [MIT license](https://opensource.org/licenses/mit-license.php) © JeffreyTse.
+Site theme based on [jekyll-theme-yat](https://github.com/jeffreytse/jekyll-theme-yat), licensed under the [MIT License](LICENSE.txt).
 
 <!-- External links -->
 
