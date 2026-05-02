@@ -1,0 +1,51 @@
+"AAAI":
+  url: https://aaai.org/conference/aaai/
+  color: "#4b63d8"
+
+"ACM MM":
+  url: https://www.acmmm.org/
+  color: "#8b1e3f"
+
+"CVPR":
+  url: https://cvpr.thecvf.com/
+  color: "#b54a35"
+
+"ECCV":
+  url: https://eccv.ecva.net/
+  color: "#2563a7"
+
+"ICCV":
+  url: https://iccv.thecvf.com/
+  color: "#ad1457"
+
+"ICLR":
+  url: https://iclr.cc/
+  color: "#b54a35"
+
+"ICML":
+  url: https://icml.cc/
+  color: "#c66a28"
+
+"IJCV":
+  url: https://link.springer.com/journal/11263
+  color: "#1f5f88"
+
+"NeurIPS":
+  url: https://neurips.cc/
+  color: "#5060b7"
+
+"SIGIR":
+  url: https://sigir.org/
+  color: "#6a1b9a"
+
+"TIFS":
+  url: https://signalprocessingsociety.org/publications-resources/ieee-transactions-information-forensics-and-security
+  color: "#287a74"
+
+"TIP":
+  url: https://signalprocessingsociety.org/publications-resources/ieee-transactions-image-processing
+  color: "#2e7d32"
+
+"TPAMI":
+  url: https://www.computer.org/csdl/journal/tp
+  color: "#357a45"

@@ -1,50 +1,69 @@
-<div class="publication-entry">
-  <div class="publication-title">{{ entry.title }}</div>
+{% assign venue = entry.journal | default: entry.booktitle | default: entry.school %}
+{% assign venue_abbr = entry.abbr %}
+{% if venue_abbr == blank and venue contains '(' and venue contains ')' %}
+  {% assign venue_abbr = venue | split: '(' | last | split: ')' | first | strip %}
+{% endif %}
+{% assign venue_data = site.data.venues[venue_abbr] %}
+{% assign venue_color = venue_data.color | default: '#389092' %}
 
-  <div class="publication-authors">
-    {% for author in entry.author_array %}
-      {{ author.first }} {{ author.last }}{% unless forloop.last %}{% if forloop.rindex == 2 %} and {% else %}, {% endif %}{% endunless %}
-    {% endfor %}
-  </div>
-
-  {% assign venue = entry.journal | default: entry.booktitle | default: entry.school %}
-  <div class="publication-venue">
-    {{ venue }}{% if entry.year %}, {{ entry.year }}{% endif %}
-  </div>
-
-  {% if entry.note %}
-    <div class="publication-note">{{ entry.note }}</div>
-  {% endif %}
-
-  {% assign has_links = entry.pdf or entry.code or entry.website or entry.doi or entry.arxiv or entry.slides %}
-  {% if has_links %}
-    <div class="publication-links">
-      {% if entry.pdf %}
-        {% if entry.pdf contains '://' %}
-          <a href="{{ entry.pdf }}">PDF</a>
-        {% else %}
-          <a href="{{ entry.pdf | relative_url }}">PDF</a>
-        {% endif %}
-      {% endif %}
-      {% if entry.code %}
-        <a href="{{ entry.code }}">Code</a>
-      {% endif %}
-      {% if entry.website %}
-        <a href="{{ entry.website }}">Website</a>
-      {% endif %}
-      {% if entry.doi %}
-        <a href="https://doi.org/{{ entry.doi }}">DOI</a>
-      {% endif %}
-      {% if entry.arxiv %}
-        <a href="https://arxiv.org/abs/{{ entry.arxiv }}">arXiv</a>
-      {% endif %}
-      {% if entry.slides %}
-        {% if entry.slides contains '://' %}
-          <a href="{{ entry.slides }}">Slides</a>
-        {% else %}
-          <a href="{{ entry.slides | relative_url }}">Slides</a>
-        {% endif %}
+<div class="publication-entry{% if venue_abbr %} has-publication-abbr{% endif %}">
+  {% if venue_abbr %}
+    <div class="publication-abbr" style="--publication-badge-color: {{ venue_color }};">
+      {% if venue_data.url %}
+        <a href="{{ venue_data.url }}" title="{{ venue | escape }}">{{ venue_abbr }}</a>
+      {% else %}
+        <span title="{{ venue | escape }}">{{ venue_abbr }}</span>
       {% endif %}
     </div>
   {% endif %}
+
+  <div class="publication-body">
+    <div class="publication-title">{{ entry.title }}</div>
+
+    <div class="publication-authors">
+      {% for author in entry.author_array %}
+        {{ author.first }} {{ author.last }}{% unless forloop.last %}{% if forloop.rindex == 2 %} and {% else %}, {% endif %}{% endunless %}
+      {% endfor %}
+    </div>
+
+    <div class="publication-venue">
+      {{ venue }}{% if entry.year %}, {{ entry.year }}{% endif %}
+    </div>
+
+    {% if entry.note %}
+      <div class="publication-note">{{ entry.note }}</div>
+    {% endif %}
+
+    {% assign has_links = entry.pdf or entry.code or entry.website or entry.doi or entry.arxiv or entry.slides %}
+    {% if has_links %}
+      <div class="publication-links">
+        {% if entry.pdf %}
+          {% if entry.pdf contains '://' %}
+            <a href="{{ entry.pdf }}">PDF</a>
+          {% else %}
+            <a href="{{ entry.pdf | relative_url }}">PDF</a>
+          {% endif %}
+        {% endif %}
+        {% if entry.code %}
+          <a href="{{ entry.code }}">Code</a>
+        {% endif %}
+        {% if entry.website %}
+          <a href="{{ entry.website }}">Website</a>
+        {% endif %}
+        {% if entry.doi %}
+          <a href="https://doi.org/{{ entry.doi }}">DOI</a>
+        {% endif %}
+        {% if entry.arxiv %}
+          <a href="https://arxiv.org/abs/{{ entry.arxiv }}">arXiv</a>
+        {% endif %}
+        {% if entry.slides %}
+          {% if entry.slides contains '://' %}
+            <a href="{{ entry.slides }}">Slides</a>
+          {% else %}
+            <a href="{{ entry.slides | relative_url }}">Slides</a>
+          {% endif %}
+        {% endif %}
+      </div>
+    {% endif %}
+  </div>
 </div>
