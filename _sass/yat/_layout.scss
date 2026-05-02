@@ -113,14 +113,19 @@ html {
 }
 
 .site-brand {
-  line-height: $header-height;
+  display: flex;
+  align-items: center;
+  height: $header-height;
   margin-right: 50px;
 
   .site-brand-inner {
+    display: flex;
+    align-items: center;
     @include relative-font-size(1.125);
     font-weight: $base-font-weight;
     letter-spacing: -1px;
     transition: 0.1s filter color;
+    line-height: 1;
 
     &, &:visited {
       color: $header-text-color;
@@ -129,7 +134,37 @@ html {
     .site-favicon {
       display: inline-block;
       height: divide($header-height, 1.5);
-      margin-right: 5px;
+      margin-right: 8px;
+      flex-shrink: 0;
+    }
+
+    .site-brand-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .site-brand-title {
+        display: block;
+        font-size: 1em;
+      }
+
+      .site-brand-subtitle {
+        display: block;
+        @include relative-font-size(0.75);
+        font-weight: normal;
+        letter-spacing: 0;
+        opacity: 0.85;
+        margin-top: 1px;
+      }
+
+      .site-brand-subtext {
+        display: block;
+        @include relative-font-size(0.6);
+        font-weight: normal;
+        letter-spacing: 0;
+        opacity: 0.65;
+        margin-top: 1px;
+      }
     }
   }
 }
@@ -693,13 +728,27 @@ html {
 
       > :nth-child(2) {
         font-weight: 200;
-        margin-bottom: 0.8em;
+        margin-bottom: 0.2em;
         color: rgba(255, 255, 255, 0.9);
         text-shadow: 0 3px 14px rgba(0, 0, 0, 0.64);
         transition: 0.2s all;
 
         @include media-query($on-palm) {
           @include relative-font-size(1.175);
+        }
+      }
+
+      > :nth-child(3) {
+        @include relative-font-size(0.95);
+        font-weight: 300;
+        margin-bottom: 0.8em;
+        color: rgba(255, 255, 255, 0.7);
+        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+        transition: 0.2s all;
+        letter-spacing: 0;
+
+        @include media-query($on-palm) {
+          @include relative-font-size(0.85);
         }
       }
 

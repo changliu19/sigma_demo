@@ -1,6 +1,7 @@
 title: About
 heading: SIGMA
-subheading: SUFE artIficial General intelligence & Multimodal AI Lab
+subheading: 上海财经大学通用智能与多模态实验室
+# subsubheading: SUFE artIficial General intelligence & Multimodal AI Lab
 banner: /assets/images/banners/home.jpeg
 
 intro:
@@ -13,9 +14,7 @@ intro:
       to advancing international frontier research in artificial intelligence and
       computer vision. The lab focuses on key areas including embodied
       intelligence, multimodal large models, intelligent agents, 3D spatial
-      intelligence, and scene generation.
-    - >
-      Guided by fundamental scientific challenges and driven by the pursuit of
+      intelligence, and scene generation. Guided by fundamental scientific challenges and driven by the pursuit of
       high-impact research outcomes, SIGMA has made a series of influential
       contributions in computer vision and machine learning in recent years.
     - >
@@ -63,6 +62,16 @@ research_focus:
 
 panels:
   - title: Quick Links
+    items:
+      - label: SUFE
+        url: https://www.sufe.edu.cn/
+      - label: SUFE SCAI
+        url: https://scai.sufe.edu.cn/
+      - label: People
+        url: /people/
+      - label: Publications
+        url: /publications/
+  - title: Contact Us
     items:
       - label: SUFE
         url: https://www.sufe.edu.cn/
