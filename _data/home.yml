@@ -63,21 +63,17 @@ research_focus:
 panels:
   - title: Quick Links
     items:
-      - label: SUFE
+      - label: 上海财经大学
         url: https://www.sufe.edu.cn/
-      - label: SUFE SCAI
+      - label: 上海财经大学计算机与人工智能学院
         url: https://scai.sufe.edu.cn/
-      - label: People
-        url: /people/
-      - label: Publications
-        url: /publications/
+      - label: 上海财经大学研究生院
+        url: https://gs.sufe.edu.cn/
+
   - title: Contact Us
+    description: 如有任何疑问，欢迎与我们联系：
     items:
-      - label: SUFE
-        url: https://www.sufe.edu.cn/
-      - label: SUFE SCAI
-        url: https://scai.sufe.edu.cn/
-      - label: People
-        url: /people/
-      - label: Publications
-        url: /publications/
+      - label: shuting.he@sufe.edu.cn
+        url: mailto:shuting.he@sufe.edu.cn
+      - label: liuchang@sufe.edu.cn
+        url: mailto:liuchang@sufe.edu.cn

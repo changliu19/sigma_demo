@@ -41,8 +41,9 @@ show_posts: false
 
 <section class="lab-home-panels">
   {% for panel in site.data.home.panels %}
-    <article class="lab-panel scroll-fade-up">
+    <article class="lab-panel lab-panel--{{ panel.title | slugify }} scroll-fade-up">
       <h2>{{ panel.title }}</h2>
+      {% if panel.description %}<p class="lab-panel-description">{{ panel.description }}</p>{% endif %}
       <ul>
         {% for item in panel.items %}
           <li>

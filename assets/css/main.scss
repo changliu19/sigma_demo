@@ -205,12 +205,33 @@ $selection-background-color: unquote("{{ site.selection.background_color }}");
 
   h2 {
     margin-top: 0;
-    margin-bottom: 1.35rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .lab-panel-description {
+    margin: 0 0 1rem;
+    font-size: 0.88rem;
+    color: #6b8a8c;
+    font-style: italic;
   }
 
   ul {
     margin: 0;
     padding-left: 1.2rem;
+  }
+}
+
+.lab-panel--contact-us {
+  .lab-panel-description {
+    margin-bottom: 0.55rem;
+  }
+
+  ul {
+    line-height: 1.5;
+  }
+
+  li + li {
+    margin-top: 0.2rem;
   }
 }
 
