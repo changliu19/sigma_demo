@@ -10,17 +10,20 @@
           <p class="person-name">{{ member.name }}</p>
           <p>{{ member.role }}</p>
           <p>
+            {% assign has_link = false %}
             {% if member.homepage %}
               <a href="{{ member.homepage }}">Homepage</a>
-            {% endif %}
-            {% if member.homepage and member.email %}
-              ·
+              {% assign has_link = true %}
             {% endif %}
             {% if member.email %}
+              {% if has_link %} · {% endif %}
               <a href="mailto:{{ member.email }}">Email</a>
+              {% assign has_link = true %}
             {% endif %}
             {% if member.github %}
-              · <a href="{{ member.github }}">GitHub</a>
+              {% if has_link %} · {% endif %}
+              <a href="{{ member.github }}">GitHub</a>
+              {% assign has_link = true %}
             {% endif %}
           </p>
         </article>

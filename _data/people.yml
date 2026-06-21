@@ -38,6 +38,17 @@ groups:
         role: Ph.D. Student
         email: douh645@gmail.com
 
+      - name: Junyi Zhou
+        image: /assets/images/people/Junyi%20Zhou.jpg
+        role: Ph.D. Student
+        email: yijunz218@gmail.com
+        github: https://github.com/yijunz218
+
+      - name: Jiyuan Xu
+        image: /assets/images/people/Jiyuan%20Xu.jpg
+        role: Ph.D. Student
+        github: https://github.com/JasonStraka
+
   - title: Master Students
     members:
 
@@ -57,3 +68,67 @@ groups:
         role: Master Student
         email: tianqichen@stu.sufe.edu.cn
         github: https://github.com/chanqilin
+
+      - name: Yu Fu
+        image: /assets/images/people/Yufu.jpg
+        role: Master Student
+        email: 15736997668@163.com
+        github: https://github.com/xiaoyu2029
+
+      - name: Peiling Ji
+        image: /assets/images/people/Peiling%20Ji.jpg
+        role: Master Student
+        github: https://github.com/SPT806
+
+      - name: Xiangyu Ren
+        image: /assets/images/people/Xiangyu%20Ren.jpg
+        role: Master Student
+        email: 16038182@qq.com
+        github: https://github.com/A1ucardR
+
+      - name: Shuai Ge
+        image: /assets/images/people/Shuai%20Ge.jpg
+        role: Master Student
+        email: ggshawn22@gmail.com
+        github: https://github.com/sleepy-shawn
+
+      - name: Dongcheng
+        image: /assets/images/people/Dongcheng.jpg
+        role: Master Student
+        email: chendong@stu.sufe.edu.cn
+
+  - title: Undergraduate Students
+    members:
+
+      - name: Yujie Li
+        image: /assets/images/people/Yujie%20Li.jpg
+        role: Undergraduate Student
+        email: 2023111658@stu.sufe.edu.cn
+        github: https://github.com/LLLLL-web
+
+      - name: Zeyu Yin
+        image: /assets/images/people/Zeyu%20Yin.jpg
+        role: Undergraduate Student
+        email: 3097301056@qq.com
+        github: https://github.com/ZeyuYin77
+
+      - name: Yuxuan Li
+        image: /assets/images/people/Yuxuan%20Li.jpg
+        role: Undergraduate Student
+        email: 2024110542@stu.sufe.edu.cn
+
+      - name: Yuliang Li
+        image: /assets/images/people/Yuliang%20Li.jpg
+        role: Undergraduate Student
+        email: universelight878@gmail.com
+        github: https://github.com/GradientSeeker923
+
+      - name: Zhihao Ma
+        image: /assets/images/people/Zhihao%20Ma.jpg
+        role: Undergraduate Student
+        email: 2024110966@stu.sufe.edu.cn
+
+      - name: Ruiyang Peng
+        image: /assets/images/people/Ruiyang%20Peng.jpg
+        role: Undergraduate Student
+        email: 2023120956@stu.sufe.edu.cn
