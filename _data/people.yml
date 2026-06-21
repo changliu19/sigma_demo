@@ -38,8 +38,8 @@ groups:
         role: Ph.D. Student
         email: douh645@gmail.com
 
-      - name: Junyi Zhou
-        image: /assets/images/people/Junyi%20Zhou.jpg
+      - name: Yijun Zhou
+        image: /assets/images/people/Yijun%20Zhou.jpg
         role: Ph.D. Student
         email: yijunz218@gmail.com
         github: https://github.com/yijunz218
@@ -75,8 +75,8 @@ groups:
         email: 15736997668@163.com
         github: https://github.com/xiaoyu2029
 
-      - name: Peiling Ji
-        image: /assets/images/people/Peiling%20Ji.jpg
+      - name: Peilin Ji
+        image: /assets/images/people/Peilin%20Ji.jpg
         role: Master Student
         github: https://github.com/SPT806
 
@@ -92,8 +92,8 @@ groups:
         email: ggshawn22@gmail.com
         github: https://github.com/sleepy-shawn
 
-      - name: Dongcheng
-        image: /assets/images/people/Dongcheng.jpg
+      - name: Dong Chen
+        image: /assets/images/people/Dong%20Chen.jpg
         role: Master Student
         email: chendong@stu.sufe.edu.cn
 
