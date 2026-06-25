@@ -97,6 +97,16 @@ groups:
         role: Master Student
         email: chendong@stu.sufe.edu.cn
 
+      - name: Xu Zhang
+        image: /assets/images/people/Zhang%20Xu.jpg
+        role: Master Student
+        email: 2025214433@stu.sufe.edu.cn
+
+      - name: Yongkang Yang
+        image: /assets/images/people/Yang%20Yongkang.jpg
+        role: Master Student
+        email: 2025214429@stu.sufe.edu.cn
+
   - title: Undergraduate Students
     members:
 
