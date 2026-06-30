@@ -12,8 +12,8 @@ groups:
       - name: Chang Liu
         image: /assets/images/people/Liu%20Chang.jpg
         role: "Lab Director<br>Assistant Professor"
-        homepage: https://scai.sufe.edu.cn/lc11/main.htm
-        email: chang.liu@sufe.edu.cn
+        homepage: https://changliu19.github.io/
+        email: liuchang@sufe.edu.cn
 
   - title: Visiting Faculty
     members:
