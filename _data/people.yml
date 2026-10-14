@@ -49,6 +49,10 @@ groups:
         role: Ph.D. Student
         github: https://github.com/JasonStraka
 
+      - name: Zhixian Lu
+        image: /assets/images/people/Zhixian%20Lu.jpg
+        role: Ph.D. Student
+
   - title: Master Students
     members:
 
@@ -106,6 +110,18 @@ groups:
         image: /assets/images/people/Yang%20Yongkang.jpg
         role: Master Student
         email: 2025214429@stu.sufe.edu.cn
+
+      - name: Buwei Gu
+        image: /assets/images/people/Buwei%20Gu.jpg
+        role: Master Student
+
+      - name: Shiran Hu
+        image: /assets/images/people/Shiran%20Hu.jpg
+        role: Master Student
+
+      - name: Yisitepa
+        image: /assets/images/people/Yisitepa.jpg
+        role: Master Student
 
   - title: Undergraduate Students
     members:
